@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+     android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+   <TextView
+        android:id="@+id/search_result_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:layout_weight=".90"
+        android:text="İstanbul" />
+ 
+    <!-- say -->
+    <TextView
+        android:id="@+id/search_result_kod"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/search_result_text_view"
+        android:gravity="right"
+        android:text="0001"
+        android:layout_marginRight="5dip"
+        android:textSize="15dip"
+        android:textColor="#343434"
+        />
+ 
+</RelativeLayout>

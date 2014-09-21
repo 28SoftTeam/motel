@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"       
+        android:orientation="vertical" >
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/ic_launcher" />
+ 
+    </LinearLayout>
+ 
+    <!-- otel ad-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="The Marmara"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 	<!-- Otel Yıldız -->
+    <ImageView 
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:src="@drawable/ic_5stars"
+       android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+    
+    <!-- Adres-tel -->
+
+    
+    <!-- Otel Bölge -->
+    <TextView
+        android:id="@+id/bolge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="[Otel Bölge]" />
+ 
+    <!-- otel-kod -->
+    <TextView
+        android:id="@+id/kod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bolge"
+        android:gravity="right"
+        android:text=""
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/> 
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/desclayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textview_layout"
+    android:layout_marginTop="2dip"
+    android:layout_marginRight="2dip"
+    android:layout_marginLeft="2dip"
+    android:padding="3dip"
+    android:orientation="vertical" >
+
+   <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/dimen_5dp"
+         android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/radio_color"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_8dp"
+            style="@style/textview_text"
+             >
+             
+             <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:layout_marginTop="@dimen/margin_8dp"
+		        android:textSize="@dimen/et_ara_textsize"
+		        android:gravity="center_vertical"
+		        android:textStyle="bold"
+                android:text="Giriş Tarihi" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:background="@color/tv_ara_text_color"
+		        android:gravity="center_vertical"
+		        android:drawableRight="@drawable/ic_action_go_to_today"
+		        android:cursorVisible="false" 
+		        android:focusable="false" 
+		        android:focusableInTouchMode="false"
+                android:ems="10" />                
+           
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            style="@style/textview_text" >
+
+            <TextView
+                android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+                android:layout_height="30dp"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:layout_marginTop="@dimen/margin_8dp"
+		        android:textSize="@dimen/et_ara_textsize"
+		        android:gravity="center_vertical"
+		        android:textStyle="bold"
+                android:text="Çıkış Tarihi" />
+
+            <EditText
+                android:id="@+id/editText2"
+               android:layout_width="wrap_content"
+                android:layout_height="30dp"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:background="@color/tv_ara_text_color"
+		        android:gravity="center_vertical"
+		        android:drawableRight="@drawable/ic_action_go_to_today"
+		        android:cursorVisible="false" 
+		        android:focusable="false" 
+		        android:focusableInTouchMode="false"
+                android:ems="10" />            
+
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    
+<LinearLayout  android:id="@+id/radioLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dip"
+		       android:layout_marginRight="2dip"
+		       android:layout_marginLeft="2dip"
+		       android:padding="3dip"
+              android:background="@drawable/textview_layout"
+              android:orientation="vertical" >
+    
+        </LinearLayout>
+
+        
+    
+    <Button
+    android:id="@+id/btn_rezervasyon"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rezervasyon_button"
+    android:text="@string/btn_rezervasyon"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_important"
+    android:drawablePadding="4dip"
+    style="@style/rezervasyon_button" />
+
+  
+
+
+
+</LinearLayout>
+
+</ScrollView>
+

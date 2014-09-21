@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+         android:background="@drawable/textview_layout">
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eff4f4"
+        android:layout_alignParentTop="true"
+       
+        android:orientation="vertical" >
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/ic_launcher" />
+ 
+    </LinearLayout>
+ 
+    <!-- otel ad-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="M-otel"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 	
+    <!-- Otel Yıldız -->
+    <ImageView 
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:src="@drawable/ic_5stars"
+       android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+    
+    <!-- Adres-tel -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Türkiyenin Otel Rehberi" />
+    
+    <!-- Otel Bölge -->
+    <TextView
+        android:id="@+id/bolge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentBottom="true"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="[Otel Bölge]" />
+ 
+    <!-- otel-kod -->
+    <TextView
+        android:id="@+id/kod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bolge"
+        android:gravity="right"
+        android:text=""
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/> 
+</RelativeLayout>
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otel_button"
+    android:text="@string/btn_iletisim"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_call"
+    android:drawablePadding="4dip"
+    style="@style/button_text" />
+<Button
+    android:id="@+id/button2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otel_button"
+    android:text="@string/btn_harita"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_location_found"
+    android:drawablePadding="4dip"
+    style="@style/button_text" />
+<Button
+    android:id="@+id/button3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otel_button"
+    android:text="@string/btn_otel_resimler"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_picture"
+    android:drawablePadding="4dip"
+    style="@style/button_text" />
+
+<Button
+    android:id="@+id/button4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otel_button"
+    android:text="@string/btn_aciklama"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_about"
+    android:drawablePadding="4dip"
+    style="@style/button_text" />
+<Button
+    android:id="@+id/button5"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rezervasyon_button"
+    android:text="@string/btn_rezervasyon"
+    android:drawableRight="@drawable/arrow"
+    android:drawableLeft="@drawable/ic_action_important"
+    android:drawablePadding="4dip"
+    style="@style/rezervasyon_button" />
+
+</LinearLayout>
+    </ScrollView>

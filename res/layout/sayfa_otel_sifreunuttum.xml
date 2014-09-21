@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/textview_layout">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@drawable/textview_layout"
+    android:orientation="vertical" >
+
+    
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="E-mailinizi Giriniz:"/>
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_otel_rehberi_height"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:background="@color/tv_ara_text_color"
+        android:inputType="textEmailAddress"
+        android:ems="10" >
+
+        <requestFocus />
+        
+    </EditText>
+
+    
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top30dp"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:background="@drawable/otel_button"
+        android:text="@string/btn_sifregonder" />
+</LinearLayout>
+</ScrollView>

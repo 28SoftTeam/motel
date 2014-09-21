@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">motel</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="tv_otel_rehberi_color">#eb0a8d</color>
+    <dimen name="dm_otel_rehberi_height">48dp</dimen>
+    <string name="tv_otel_rehberi_text">Türkiyenin Otel Rehberi</string>
+    <color name="tv_otel_rehberi_textcolor">#ffffff</color>
+    <dimen name="tv_otel_rehberi_textsize">24sp</dimen>
+    <color name="tv_ara_text_color">#ffffff</color>
+    <dimen name="tel_text_size">24sp</dimen>
+    <string name="tv_text_ara">Sizin için en uygun oteli aramaya başlayın</string>
+    <dimen name="margin_8dp">8dp</dimen>
+    <color name="et_ara_backcolor">#ffffff</color>
+    <string name="et_ara_text">Neresi? (Otel adı, Şehir, Konum, Bölge, Kategori, Özellik...)</string>
+    <dimen name="et_ara_textsize">16sp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <string name="btn_ist_text">İstanbul Otelleri</string>
+    <string name="btn_ant_text">Antalya Otelleri</string>
+    <string name="btn_izm_text">İzmir Otelleri</string>
+    <dimen name="margin_top30dp">30dp</dimen>
+    <string name="btn_iletisim">Otel İletişim Bilgileri</string>
+    <string name="btn_harita">Oteli Haritada Bul</string>
+    <string name="btn_ozellikler">Otel Özelliklerine Bak</string>
+    <string name="btn_aciklama">Otelin Özellikleri</string>
+    <string name="btn_rezervasyon">Rezarvasyon</string>
+    <dimen name="tv_bilgi_size">16sp</dimen>
+    <color name="tv_bilgi_color">#000000</color>
+    <string name="btn_otel_resimler">Otelin Resimleri</string>
+    <color name="radio_color">#e1d9de</color>
+    <string name="btn_giris">Üye Girişi</string>
+    <string name="btn_uyeol">Üye Olmak İstiyorum</string>
+    <string name="btn_unuttum">Şifremi Unuttum</string>
+    <string name="app_id">697327366991259</string>
+    <dimen name="dimen_height_24dp">30dp</dimen>
+    <string name="btn_uyeoldum">Üye Ol</string>
+    <string name="btn_sifregonder">E-mailime Gönder</string>
+
+</resources>

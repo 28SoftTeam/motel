@@ -1,0 +1,118 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/tv_otel_rehberi_color">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tv_otel_rehberi_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_otel_rehberi_height"
+            android:gravity="center"
+            android:text="[id-otel adı]"
+            android:textColor="@color/tv_otel_rehberi_textcolor"
+            android:textSize="@dimen/tv_otel_rehberi_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_4stars" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm_otel_rehberi_height"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_top30dp"
+        android:textColor="@color/tv_bilgi_color"
+        android:textSize="@dimen/tv_bilgi_size"
+        android:text="[Adres-Tel]" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/common_signin_btn_icon_dark" />
+    
+             <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_otel_rehberi_height"
+                android:layout_marginLeft="@dimen/btn_margin"
+                android:layout_marginRight="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@drawable/btn_rounded_edge"
+                android:clickable="true"
+                android:text="@string/btn_iletisim"
+                android:textSize="@dimen/tel_text_size" />
+        
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+        		android:layout_height="@dimen/dm_otel_rehberi_height"
+		        android:layout_marginTop="@dimen/margin_8dp"
+		        android:background="@drawable/btn_rounded_edge"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:textSize="@dimen/tel_text_size"
+		        android:text="@string/btn_harita" 
+                />
+            
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+        		android:layout_height="@dimen/dm_otel_rehberi_height"        		
+		        android:layout_marginTop="@dimen/margin_8dp"		        
+		        android:background="@drawable/btn_rounded_edge"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:textSize="@dimen/tel_text_size"
+                android:text="@string/btn_otel_resimler"
+                 />
+            
+        
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+        		android:layout_height="@dimen/dm_otel_rehberi_height"        		
+		        android:layout_marginTop="@dimen/margin_8dp"		        
+		        android:background="@drawable/btn_rounded_edge"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:textSize="@dimen/tel_text_size"
+                android:text="@string/btn_aciklama"
+                 />
+            
+        
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+        		android:layout_height="@dimen/dm_otel_rehberi_height"
+		        android:layout_marginTop="@dimen/margin_8dp"
+		        android:background="@drawable/btn_rezervasyon_rounded"
+		        android:layout_marginLeft="@dimen/btn_margin"
+		        android:layout_marginRight="@dimen/btn_margin"
+		        android:textSize="@dimen/tel_text_size"
+                android:text="@string/btn_rezervasyon"
+                />
+
+</LinearLayout>
+
+
+</ScrollView>
